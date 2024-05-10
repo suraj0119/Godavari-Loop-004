@@ -12,7 +12,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
     
     
     
@@ -26,53 +25,7 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
       />
-
-        
-
     <style>
-      /* Mukul CSS */
-      .navbar-brand {
-            font-family: "PT Serif", serif;
-        }
-        #checkbtn{
-            display: none;
-            justify-self: end;
-        }
-        #check{
-            display: none;
-        }
-        #check:checked ~ div>ul{
-            left: 0;
-        }
-        @media(max-width:1022px){
-            #checkbtn{
-                display: block;
-                float: right;
-                
-            }
-            nav>div{
-                display: block;
-            }
-            .container>div>ul{
-                width: 100%;
-                height: 50vh;
-                background-color: #fff;
-                position: fixed;
-                top: 60px;
-                left: -100%;
-            }
-            
-            .container{
-                display: block;
-                text-align: center;
-            }
-            /* .btn{
-                display: none;
-            } */
-            .container>div>ul>li>a{
-                display: block;
-            }
-        }
         .logo-container-avani {
         margin-top: 30px;
         }
@@ -84,23 +37,6 @@
         .logo-container-avani img:nth-child(7) {
         width: 30%; /* 7th logo */
         }
-        .text-container-avani {
-        margin-top: 80px; /* distance from grey line */
-      font-family: "Poppins", sans-serif; /* font family */
-      font-size: 35px; 
-      font-weight: 600;
-      }
-      .line-spacing-avani{
-      margin-bottom: 0px; /* space between lines */
-      }
-      .image-shadow-avani {
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* shadow */
-      }
-        
-
-
-
-
         
         /* </om shrestha> */
 
@@ -182,8 +118,6 @@ text-align: center;
     <nav class="navbar position-sticky top-0" style="background-color: #fff0b8;">
         <!-- Navbar content -->
         <div class="container justify-content-between">
-          <input type="checkbox" id="check" name="" value="">
-            <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
             <div class="d-flex align-items-center text-center">
                 <a class="navbar-brand mx-0" href="#">
                     <img src="./assets/logo.png" alt="Logo" width="" height="45" class="d-inline-block align-text-top">
@@ -227,34 +161,9 @@ text-align: center;
         </div>
     </nav>
 
-    <!-- Section 2 -->
-    <div style="background-color: #fff0b8;">
-      <div class="container text-center py-5">
-          <div class="row align-items-center">
-            <div class="col-5">
-              <div class="heading text-md-start">
-                  <h1 class=" display-3 fw-bold mb-3">Empower your Team with Time Tracking</h1>
-                  <p class="fs-4 mb-3">TMetric streamlines your team work so you can focus on what matters</p>
-              </div>
-              <div class="input-group flex-nowrap mb-4">
-                  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-envelope" style="color: #4599d9;"></i></span>
-                  <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Username" aria-describedby="addon-wrapping">
-              </div>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start pb-5">
-                  <button class="btn btn-primary me-md-2 px-5 py-2" type="button">Get Started</button>
-                  <span class="error-massage my-auto">Fully Functional 30-Day Trial</span>
-                </div>
-            </div>
-            <div class="col-lg-7 col-sm-12">
-              <img src="https://tmetric.com/media/oaejbiic/img-home-heading.svg" class="img-fluid" alt="...">
-            </div>
-          </div>
-        </div>
-  </div>
-
 
      <!-- AVANI 1st LOGO section content  -->
-  <div class="container">
+  <div class="container border-bottom">
     
     <div class="row justify-content-center logo-container-avani">
 
@@ -282,22 +191,6 @@ text-align: center;
     </div>
    </div>
 
-   <hr>
-
-   <!-- AVANI next section content -->
-   <div class="container">
-    <div class="row justify-content-center text-container-avani">
-        <div class="col text-center">
-          <div class="line-spacing-avani"><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">Best time tracking features for</div>
-          <div class="line-spacing-avani mb-3"><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">your business</div>
-        </div>
-      </div>
-      <div class="col-md-auto ml-4"> <!--left margin -->
-        <img src="https://tmetric.com/media/pszkp4ly/image-time-page.svg" alt="T-metrix image" width="900" height="900"> <!-- image dim-->
-      </div>
-    </div>
-    </div>
-
 
 
    <!-- om -->
@@ -308,7 +201,7 @@ text-align: center;
         
         <div id="box1" class="row">
         <div id="box" class="col-lg-6  col-sm-12">
-          
+           <h1 id="hed1">Take effective control of working time</h1>
            <br>
 
            <ul >
@@ -399,152 +292,143 @@ text-align: center;
     </div>
 </main>
 
-<section>
-    <!-- Section 6th Started -->
-<div class="container p-5  border-bottom">
-    <div class="text-center">
-      
-        <h1>
-            Integrate time tracker tool with 50+
-            <br> popular services
-        </h1> 
-        <p class="fs-5">TMetric integrates with dozens of services, which lets you measure progress and activity in any tool you use.</p>
-        
-        <div class="btns p-3">
-            <button type="button" class="btn btn-primary py-2 px-4">Start Free Trial</button>
-            <button type="button" class="btn text-primary" data-mdb-ripple-init data-mdb-ripple-color="light">
-                <b>Explore All Integrations
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                      </svg>
-            </b></button>
-        </div>
-
-    </div>
-
-     <div class="cards">
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-        </div>
-        <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
-            <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
-     </div>
-</div>
-<!-- Section 6 Ended -->
-</section>
-
-<section>
-    <div class="container pb-5">
-        <div>
-      
-            <h1 class="text-center py-5">
-                Why track time with TMetric
-            </h1> 
-           
-            <div class="row pb-4">
-                <!-- <div class="col-2"></div> -->
-                <div class="col-md-7">
-                  <div class="pb-3 fs-4">
-                    TMetric helps us to track and manage our work time on different projects. It has provided us with a comprehensive overview of how our time is allocated across various tasks. Its reporting features have been particularly helpful in providing us with valuable insights into our work patterns, which has resulted in increased efficiency and productivity.
-                  </div>
-                  <div class="row">
-                    <div class="col-md-8">
-                        <p>Linda Förster, project manager at Medudy</p>
-                        <div class="star text-warning">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+ <section>
+            <!-- Section 6th Started -->
+        <div class="container p-5  border-bottom">
+            <div class="text-center">
+              
+                <h1>
+                    Integrate time tracker tool with 50+
+                    <br> popular services
+                </h1> 
+                <p class="fs-5">TMetric integrates with dozens of services, which lets you measure progress and activity in any tool you use.</p>
+                
+                <div class="btns p-3">
+                    <button type="button" class="btn btn-primary py-2 px-4">Start Free Trial</button>
+                    <button type="button" class="btn text-primary" data-mdb-ripple-init data-mdb-ripple-color="light">
+                        <b>Explore All Integrations
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
                               </svg>
+                    </b></button>
+                </div>
 
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-                              </svg>
+            </div>
 
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-                              </svg>
+             <div class="cards">
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+                </div>
+                <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                    <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+             </div>
+        </div>
+        <!-- Section 6 Ended -->
+        </section>
 
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-                              </svg>
+        <section>
+            <div class="container">
+                <div>
+              
+                    <h1 class="text-center py-5">
+                        Why track time with TMetric
+                    </h1> 
+                   
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-md-5">
+                          <div class="pb-3">
+                            TMetric helps us to track and manage our work time on different projects. It has provided us with a comprehensive overview of how our time is allocated across various tasks. Its reporting features have been particularly helpful in providing us with valuable insights into our work patterns, which has resulted in increased efficiency and productivity.
+                          </div>
+                          <div class="row">
+                            <div class="col-md-8">
+                                <p>Linda Förster, project manager at Medudy</p>
+                                <div class="star text-warning">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                      </svg>
 
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
-                              </svg>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                      </svg>
+
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                      </svg>
+
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                      </svg>
+
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                      </svg>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn text-primary" data-mdb-ripple-init data-mdb-ripple-color="light">
+                                    <b>Read Full Story
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                          </svg>
+                                </b></button>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <button type="button" class="btn text-primary" data-mdb-ripple-init data-mdb-ripple-color="light">
-                            <b>Read Full Story
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                                  </svg>
-                        </b></button>
-                    </div>
-                  </div>
+                        <div class="col-1"></div>
+                        <div class="col-md-4">
+                            <img src="./Assets/software_developers_photo.jpg" alt="" id="img">
+                        </div>
+                      </div>
+
+
                 </div>
-                <div class="col-1"></div>
-                <div class="col-md-4">
-                    <img src="./Assets/software_developers_photo.jpg" alt="" id="img">
+    
+                <div class="row">
+                    <div class="col-2">Software Developr</div>
+                    <div class="col-2">Marketers</div>
+                    <div class="col-2">Designers~</div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2"></div>
                 </div>
-              </div>
-
-
-        </div>
-
-        <div class="row border-top">
-            <div class="col-2 border-top border-primary">Software Developr</div>
-            <div class="col-2">Marketers</div>
-            <div class="col-2">Designers</div>
-            <div class="col-2">Contractors</div>
-            <div class="col-2">Consultants</div>
-            <div class="col-2">Freelancers</div>
-        </div>
-        </div>
-    </div>
-</section>
-
-<section class="bg-warning-subtle pt-5">
-    <div class="container">
-        <h2 class="text-center fs-1">Read Hundreds of Reviews</h2>
-        <div class="icons">
-            
-        </div>
-    </div>
-</section>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -568,11 +452,11 @@ text-align: center;
                 </div>
       
                 <div class="mt-4">
-                  <p class="fw-500" style="font-size: 14px">
+                  <p class="fw-400" style="font-size: 14px">
                     Powered by
                     <img
                       src="https://tmetric.com/media/pvgfkry5/logo-devart-small-white.svg"
-                      alt=""
+                      alt="devart-logo"
                     />A software vendor with 25 years of experience.
                   </p>
                 </div>
@@ -590,7 +474,7 @@ text-align: center;
                       class="d-flex flex-row mt-2 justify-content-center align-items-center"
                       style="background-color: #ebedf0"
                     >
-                      <img src="./assets/footerlogo.jpg" alt="" width="45px" />
+                      <img src="./assets/footerlogo.jpg" alt="footer-logo" width="45px" />
                       <h5>T-METRIX</h5>
                     </div>
                   </div>
