@@ -30,6 +30,49 @@
         
 
     <style>
+      /* Mukul CSS */
+      .navbar-brand {
+            font-family: "PT Serif", serif;
+        }
+        #checkbtn{
+            display: none;
+            justify-self: end;
+        }
+        #check{
+            display: none;
+        }
+        #check:checked ~ div>ul{
+            left: 0;
+        }
+        @media(max-width:1022px){
+            #checkbtn{
+                display: block;
+                float: right;
+                
+            }
+            nav>div{
+                display: block;
+            }
+            .container>div>ul{
+                width: 100%;
+                height: 50vh;
+                background-color: #fff;
+                position: fixed;
+                top: 60px;
+                left: -100%;
+            }
+            
+            .container{
+                display: block;
+                text-align: center;
+            }
+            /* .btn{
+                display: none;
+            } */
+            .container>div>ul>li>a{
+                display: block;
+            }
+        }
         .logo-container-avani {
         margin-top: 30px;
         }
@@ -139,6 +182,8 @@ text-align: center;
     <nav class="navbar position-sticky top-0" style="background-color: #fff0b8;">
         <!-- Navbar content -->
         <div class="container justify-content-between">
+          <input type="checkbox" id="check" name="" value="">
+            <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
             <div class="d-flex align-items-center text-center">
                 <a class="navbar-brand mx-0" href="#">
                     <img src="./assets/logo.png" alt="Logo" width="" height="45" class="d-inline-block align-text-top">
