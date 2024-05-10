@@ -12,7 +12,61 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    
+    
+    
+    
+    
+        <!-- Faheem Added Font-awesome link for icons in footer pon day3-->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+
+        
+
     <style>
+      /* Mukul CSS */
+      .navbar-brand {
+            font-family: "PT Serif", serif;
+        }
+        #checkbtn{
+            display: none;
+            justify-self: end;
+        }
+        #check{
+            display: none;
+        }
+        #check:checked ~ div>ul{
+            left: 0;
+        }
+        @media(max-width:1022px){
+            #checkbtn{
+                display: block;
+                float: right;
+                
+            }
+            nav>div{
+                display: block;
+            }
+            .container>div>ul{
+                width: 100%;
+                height: 50vh;
+                background-color: #fff;
+                position: fixed;
+                top: 60px;
+                left: -100%;
+            }
+            
+            .container{
+                display: block;
+                text-align: center;
+            }
+        }
         .logo-container-avani {
         margin-top: 30px;
         }
@@ -24,6 +78,69 @@
         .logo-container-avani img:nth-child(7) {
         width: 30%; /* 7th logo */
         }
+        .text-container-avani {
+        margin-top: 80px; /* distance from grey line */
+      font-family: "Poppins", sans-serif; /* font family */
+      font-size: 35px; 
+      font-weight: 600;
+      }
+      .line-spacing-avani{
+      margin-bottom: 0px; /* space between lines */
+      }
+      .image-shadow-avani {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* shadow */
+      }
+       /*boxes */
+     .custom-box {
+      width: 450px; /*first box */
+      height: 70px; /* all boxes */
+      margin-top: 10px; /* margin between boxes */
+    
+      float: right; /* float the boxes to the right */
+      border: 1px solid #e3e3e3; /* grey border */
+      border-radius: 6px; 
+      cursor: pointer; 
+      transition: box-shadow 0.3s;
+      color:black;
+      font-size: medium;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif; 
+    }
+
+    /*first box */
+    .custom-box:first-child {
+      width: 450px; /* width of the first box */
+      height: 100px;
+      border-color: blue; /* blue border */
+      background-color: #e7edfc;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hover effect*/
+    .custom-box:hover {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* darker shadow on hover */
+    }
+
+    .box-text {
+      top:50%;
+      left: 20px;
+    }
+
+    .box-image {
+      position: relative; /* absolute position for the image */
+      top: 50%; /* position the image vertically centered */
+      left: 5px; /* position the image 5px from the left */
+      transform: translateY(-50%); /* adjust vertical alignment */
+      width: 40px; /* width of the image */
+      height: auto; /* maintain aspect ratio */
+      
+     
+    }
+        
+
+
+
+
         
         /* </om shrestha> */
 
@@ -53,6 +170,50 @@ text-align: center;
 
 
 }
+
+.cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+        .cards>.row>.col-1>img{
+            height: auto;
+            width: 6rem;
+        }
+        .img:hover{
+            cursor: pointer;
+            box-shadow: -10px 20px 30px -10px grey;
+        }
+        #img{
+            box-shadow: -10px 20px 30px -10px grey;
+        }
+        
+
+
+
+
+
+
+        /* Faheems CSS Part From Here onWards  */
+        footer > section:nth-of-type(1) {
+        background-color: #41338f;
+        width: 100%;
+        height: 220px;
+      }
+
+      section {
+        background-color: #ebedf0;
+      }
+      .col a {
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        font-size: larger;
+      }
+      .col a:hover {
+        text-decoration: underline;
+      }
     </style>
 </head>
 
@@ -61,6 +222,8 @@ text-align: center;
     <nav class="navbar position-sticky top-0" style="background-color: #fff0b8;">
         <!-- Navbar content -->
         <div class="container justify-content-between">
+          <input type="checkbox" id="check" name="" value="">
+            <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
             <div class="d-flex align-items-center text-center">
                 <a class="navbar-brand mx-0" href="#">
                     <img src="./assets/logo.png" alt="Logo" width="" height="45" class="d-inline-block align-text-top">
@@ -104,9 +267,34 @@ text-align: center;
         </div>
     </nav>
 
+    <!-- Section 2 -->
+    <div style="background-color: #fff0b8;">
+      <div class="container text-center py-5">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-xl-6">
+              <div class="heading text-md-start">
+                  <h1 class=" display-3 fw-bold mb-3">Empower your Team with Time Tracking</h1>
+                  <p class="fs-4 mb-3">TMetric streamlines your team work so you can focus on what matters</p>
+              </div>
+              <div class="input-group flex-nowrap mb-4">
+                  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-envelope" style="color: #4599d9;"></i></span>
+                  <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start pb-5">
+                  <button class="btn btn-primary me-md-2 px-5 py-2" type="button">Get Started</button>
+                  <span class="error-massage my-auto">Fully Functional 30-Day Trial</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 col-xl-6">
+              <img src="https://tmetric.com/media/oaejbiic/img-home-heading.svg" class="img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+  </div>
 
-     <!-- AVANI 1st LOGO section content  -->
-  <div class="container border-bottom">
+
+       <!-- AVANI 1st LOGO section content  -->
+  <div class="container">
     
     <div class="row justify-content-center logo-container-avani">
 
@@ -134,17 +322,67 @@ text-align: center;
     </div>
    </div>
 
+   <hr>
+    
+
+    <!-- AVANI next section content -->
+    <div class="container">
+      <div class="row text-container-avani mb-4">
+          <div class="col text-center">
+            <div class="line-spacing-avani"><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">Best time tracking features for</div>
+            <div class="line-spacing-avani mb-0"><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">your business</div>
+          </div>
+        </div>
+      <div class="row gap-4">
+        <div class="col-7"> 
+          <img class="img-fluid mt-4" src="https://tmetric.com/media/pszkp4ly/image-time-page.svg" alt="T-metrix image" > 
+        </div>
+
+<!-- <div class="col-1"></div> -->
+
+        <!-- Boxes -->
+        <div class="col-4">
+          <div class="custom-box">
+            <img class="box-image" src="https://tmetric.com/media/2p4n4oyc/icon-timer-blue.svg" alt="error">
+              <span class="p-2 text-center">Tracking</span></div><br>
+
+          <div class="custom-box">
+            <img class="box-image" src="https://tmetric.com/media/1niddz51/icon-project-blue.svg" alt="error"> 
+            <span class="p-2 text-center"> Project Management</span></div><br>
+
+          <div class="custom-box">
+            <img class="box-image" src="https://tmetric.com/media/2gxihhdu/icon-team-blue.svg" alt="error">  Team Management</div><br>
+
+          <div class="custom-box">
+            <img class="box-image" src="https://tmetric.com/media/s4koycnp/icon-invoice-blue.svg" alt="error">  Billing & Invoicing</div><br>
+
+          <div class="custom-box">
+            <img class="box-image" src="https://tmetric.com/media/yoblhiut/icon-reports-blue.svg" alt="error">  Reporting</div><br>
+
+          <div class="custom-box">
+            <img class="box-image" src="https://tmetric.com/media/cajpa4uy/icon-time-off-blue.svg" alt="error">  Time Off</div><br>
+
+        </div>
+      </div>
+    </div>
+    
+  <div class="container" style="width: 200px; height: 100px;"></div>
+  
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 
    <!-- om -->
 
 
    <main>
-    <div class="container text-start">
+    <div class="container text-start" style="background-color: rgb(248,249,250);">
         
         <div id="box1" class="row">
         <div id="box" class="col-lg-6  col-sm-12">
-           <h1 id="hed1">Take effective control of working time</h1>
+          <h1 id="hed1">Take effective control of working time</h1>
+ 
            <br>
 
            <ul >
@@ -234,6 +472,320 @@ text-align: center;
         </div>
     </div>
 </main>
+
+    <!-- Suraj Hero Section Start -->
+
+    <section class="bg-transparent">
+        <!-- Section 6th Started -->
+    <div class="container p-5  border-bottom">
+        <div class="text-center">
+          
+            <h1>
+                Integrate time tracker tool with 50+
+                <br> popular services
+            </h1> 
+            <p class="fs-5">TMetric integrates with dozens of services, which lets you measure progress and activity in any tool you use.</p>
+            
+            <div class="btns p-3">
+                <button type="button" class="btn btn-primary py-2 px-4">Start Free Trial</button>
+                <button type="button" class="btn text-primary" data-mdb-ripple-init data-mdb-ripple-color="light">
+                    <b>Explore All Integrations
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                          </svg>
+                </b></button>
+            </div>
+
+        </div>
+
+         <div class="cards">
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                <img src="./Assets/logo-google-workspace.svg" width="100px" alt="">
+            </div>
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                <img src="./assets/logo-integration-msoffice.svg" width="100px" alt="">
+            </div>
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                <img src="./Assets/logo-google-keep.svg" width="100px" alt="">
+            </div>
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                <img src="./Assets/logo-integration-github.svg" width="100px" alt="">
+            </div>
+
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                <img src="./Assets/logo-integration-excel.svg" width="100px" alt="">
+            </div>
+            
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2">
+                <img src="./Assets/logo-integration-asana.svg" width="100px" alt="">
+            </div>
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                <img src="./Assets/logo-integration-jira.svg" width="100px" alt="">
+            </div>
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                <img src="./Assets/gitlab-logo-2023.svg" width="100px" alt="">
+            </div>
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                <img src="./Assets/logo-google-docs.svg" width="100px" alt="">
+            </div>
+            
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                <img src="./Assets/logo-integration-trello.svg" width="100px" alt="">
+            </div>
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                <img src="./Assets/logo-integration-redmine.svg" width="100px" alt="">
+            </div>
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                <img src="./Assets/logo-integration-zendesk.svg" width="100px" alt="">
+            </div>
+            <div class="img border border-1 py-5 px-3 rounded ms-5 ms-2 mt-4">
+                <img src="./Assets/logo-integration-wrike.svg" width="100px" alt="">
+            </div>
+
+    </div>
+    <!-- Section 6 Ended -->
+    </section>
+
+    <section class="bg-transparent">
+        <div class="container pb-5">
+            <div>
+          
+                <h1 class="text-center py-5">
+                    Why track time with TMetric
+                </h1> 
+               
+                <div class="row pb-4">
+                    <!-- <div class="col-2"></div> -->
+                    <div class="col-md-7">
+                      <div class="pb-3 fs-4">
+                        TMetric helps us to track and manage our work time on different projects. It has provided us with a comprehensive overview of how our time is allocated across various tasks. Its reporting features have been particularly helpful in providing us with valuable insights into our work patterns, which has resulted in increased efficiency and productivity.
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8">
+                            <p>Linda Förster, project manager at Medudy</p>
+                            <div class="star text-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                  </svg>
+
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                  </svg>
+
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                  </svg>
+
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                  </svg>
+
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                  </svg>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn text-primary" data-mdb-ripple-init data-mdb-ripple-color="light">
+                                <b>Read Full Story
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                      </svg>
+                            </b></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-md-4">
+                        <img src="./Assets/software_developers_photo.jpg" alt="" id="img">
+                    </div>
+                  </div>
+
+
+            </div>
+
+            <div class="row border-top ">
+                <div class="col-2 border-top border-primary">Software Developr</div>
+                <div class="col-2">Marketers</div>
+                <div class="col-2">Designers</div>
+                <div class="col-2">Contractors</div>
+                <div class="col-2">Consultants</div>
+                <div class="col-2">Freelancers</div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-warning-subtle pt-5">
+        <div class="container">
+            <h2 class="text-center fs-1">Read Hundreds of Reviews</h2>
+            <div class="reating pt-3">
+                <img src="./assets/img-rating-4-5.svg" alt="">
+            </div>
+            <h2 class="text-center fs-1 pt-3">4.5 Customer Rating</h2>
+            <h2 class="text-center fs-1 pt-3 hov">242 Reviews</h2>
+        </div>
+    </section>
+
+    <section class="bg-body-secondary gray">
+        <h4 class="text-center pt-5">Used and trusted by 3000+ businesses in the world</h4>
+        <div class="logoss d-flex justify-content-center pt-3 ">
+            <img src="./assets/logo_business_endygo.png" height="50"  alt="">
+            <img src="./assets/logo_business_itsyndicate.png" height="40"  alt="">
+            <img src="./assets/logo_business_pulso.png"  height="50"  alt="">
+            <img src="./assets/logo_business_050media.png" height="50"  alt="">
+            <img src="./assets/logo-business-jot-digi-tal.svg" height="50"  alt="">
+            <img src="./assets/logo-business-freshlab.svg" height="50"  alt="">
+            <img src="./assets/logo-business-mvad.svg" height="50"  alt="">
+            <img src="./assets/logo_business_swaven.png" height="50"  alt="">
+        </div>
+    </section>
+    
+
+    <!-- Suraj Hero Section End -->
+
+
+
+
+        <!-- Faheem's code  -->
+        <footer>
+            <!-- faheems footer first section -->
+            <section>
+              <div
+                class="container d-flex flex-column justify-content-center align-items-center text-white pt-4"
+              >
+                <h1 class="fw-bold fs-1 text">Make time work for you!</h1>
+      
+                <div class="mt-3">
+                  <button
+                    class="p-2 rounded mb-2rem fw-bold"
+                    style="width: 158px; background-color: #ffffff#fff; border: none"
+                  >
+                    Start Free Trial
+                  </button>
+                </div>
+      
+                <div class="mt-4">
+                  <p class="fw-500" style="font-size: 14px">
+                    Powered by
+                    <img
+                      src="https://tmetric.com/media/pvgfkry5/logo-devart-small-white.svg"
+                      alt=""
+                    />A software vendor with 25 years of experience.
+                  </p>
+                </div>
+              </div>
+            </section>
+      
+
+            
+            <!-- Faheem's seond section in footer -->
+            <section>
+              <div class="container pt-3">
+                <div class="row">
+                  <div class="col">
+                    <div
+                      class="d-flex flex-row mt-2 justify-content-center align-items-center"
+                      style="background-color: #ebedf0"
+                    >
+                      <img src="./assets/footerlogo.jpg" alt="" width="45px" />
+                      <h5>T-METRIX</h5>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="d-flex flex-column">
+                      <h6 class="mt-3">Applications</h6>
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-solid fa-desktop"></i>
+      
+                        <a href="#">Desktop</a>
+                      </div>
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-brands fa-apple"></i>
+                        <a href="#">iOS</a>
+                      </div>
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-brands fa-android"></i>
+                        <a href="#">Android</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col">
+                    <div class="d-flex flex-column">
+                      <h6 class="mt-3">Browse Extensions</h6>
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-brands fa-chrome"></i>
+                        <a href="#"> Chrome</a>
+                      </div>
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-brands fa-firefox"></i>
+                        <a href="#">Firefox</a>
+                      </div>
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-brands fa-opera"></i>
+                        <a href="#">Opera</a>
+                      </div>
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-brands fa-edge"></i>
+                        <a href="#">Edge</a>
+                      </div>
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-brands fa-safari"></i>
+                        <a href="#">Safari</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col">
+                    <div class="d-flex flex-column">
+                      <h6 class="mt-3">Resources</h6>
+                      <a href="#"> Solutions </a>
+                      <a href="#">Integrations</a>
+                      <a href="#">Help</a>
+                      <a href="#">Time Trackers Comparison</a>
+                      <a href="#">White Papers</a>
+                      <a href="#">Blog</a>
+                    </div>
+                  </div>
+      
+                  <div class="col">
+                    <div class="d-flex flex-column">
+                      <h6 class="mt-3">About</h6>
+                      <a href="#">About TMetric</a>
+                      <a href="#">Terms of Service</a>
+                      <a href="#">Privacy Policy</a>
+                      <a href="#">Time Trackers Comparison</a>
+                      <a href="#">Cooies policy</a>
+                      <a href="#">Partnership</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <hr />
+              <div
+                class="container d-flex justify-content-start flex-column"
+                style="margin-bottom: 6px; padding: 8px"
+              >
+                <div class="row">
+                  <div class="col-6">
+                    <h6 class="pt-2">Copyright © Devart 2024</h6>
+                  </div>
+                  <div class="col-6">
+                    <i class="fa-brands fa-facebook fa-xl" style="color: #919191"></i>
+                    <i
+                      class="fa-brands fa-x-twitter fa-xl"
+                      style="color: #919191"
+                    ></i>
+                    <i class="fa-brands fa-linkedin fa-xl" style="color: #919191"></i>
+                    <i class="fa-brands fa-youtube fa-xl" style="color: #919191"></i>
+                    <i class="fa-brands fa-discord fa-xl" style="color: #919191"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </footer>
 </body>
 
 </html>
