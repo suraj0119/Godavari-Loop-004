@@ -101,4 +101,127 @@ section .container .box h3 {
   text-decoration: none;
 }
 
+.container_o {
+  width: 1320px;
+  height: 600px;
+  top: 2266.58px;
+  left: 300px;
+  gap: 0px;
+  opacity: 0px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(300px, 520px 410px);
+}
+.container_o > div:nth-of-type(1) {
+  width: 300px;
+  height: 240px;
+  gap: 0px;
+  opacity: 0.5px;
+}
+.container_o > div:nth-of-type(2) {
+  width: 520px;
+  height: 240px;
+  top: 90px;
+  left: 345px;
+  gap: 0px;
+  border-radius: 12px 0px 0px 0px;
+  opacity: 0px;
+}
+.container_o > div:nth-of-type(3) {
+  width: 410px;
+  height: 510px;
+  top: 90px;
+  left: 895px;
+  gap: 0px;
+  border-radius: 12px 0px 0px 0px;
+  opacity: 0px;
+  grid-column-start: 3;
+  grid-row-end: 2;
+}
+.container_o > div:nth-of-type(4) {
+  position: relative;
+  width: 300px;
+  height: 240px;
+  bottom: 250px;
+  gap: 0px;
+  border-radius: 12px 0px 0px 0px;
+  opacity: 0px;
+}
+.container_o > div:nth-of-type(5) {
+  position: relative;
+  width: auto;
+  height: auto;
+  bottom: 250px;
+  gap: 0px;
+  border-radius: 12px 0px 0px 0px;
+  opacity: 0px;
+  display: flex;
+  column-gap: 3%;
+}
+
+.cont {
+  margin: auto;
+  width: 1320px;
+  height: auto;
+  display: flex;
+  column-gap: 70%;
+}
+
+.contr {
+  width: auto;
+  height: 716.5px;
+  padding: 120px 0px;
+  box-sizing: border-box;
+  background-color: rgb(254, 247, 244);
+}
+.contr > div {
+  width: 1320px;
+  height: 476.5px;
+  gap: 0px;
+  opacity: 0px;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+}
+.contr > div > div {
+  width: 728.02px;
+  height: 101px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.contb {
+  width: 1320px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.contain {
+  width: 1320px;
+  height: auto;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contain > div:nth-of-type(1) {
+  width: 630px;
+  height: 390.13px;
+  gap: 0px;
+  border-radius: 12px 0px 0px 0px;
+  opacity: 0.5px;
+  background: linear-gradient(180deg, rgba(5, 7, 60, 0) 0%, #05073C 100%);
+}
+.contain > div:nth-of-type(2) {
+  width: 630px;
+  height: 390.13px;
+  gap: 0px;
+  border-radius: 12px 0px 0px 0px;
+  opacity: 0.5px;
+  background: linear-gradient(180deg, rgba(5, 7, 60, 0) 0%, #05073C 100%);
+}
+
 /*# sourceMappingURL=style.css.map */
