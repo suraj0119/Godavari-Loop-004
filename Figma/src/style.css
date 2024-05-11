@@ -1,5 +1,104 @@
-h1 {
-  color: red;
+section {
+  background-color: #05073C;
+  padding-bottom: 105px;
+}
+section div > .head {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1320px;
+  margin: auto;
+  padding-top: 20px;
+}
+section div > .head h2 {
+  font-family: Inter;
+  font-size: 29.65px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  color: #FFFFFF;
+  /* margin-top: 125px; */
+  /* padding-top: 50px;
+  padding-left: 80px; */
+}
+section div > .head h3 {
+  font-family: Inter;
+  font-size: 14.3px;
+  font-weight: 400;
+  line-height: 28.13px;
+  /* text-align: left; */
+  color: #FFFFFF;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+section .container {
+  max-width: 1320px;
+  height: auto;
+  margin: auto;
+  padding-left: 300px;
+  padding-right: 300px;
+  gap: 0px;
+  opacity: 0px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+section .container .box span {
+  font-family: Inter;
+  font-size: 13.89px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: left;
+  color: #FFFFFF;
+  width: 89.45px;
+  height: 18px;
+  margin-top: 428px;
+}
+section .container .box h3 {
+  font-family: Inter;
+  font-size: 17.3px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.container2 {
+  max-width: 1320px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 124px;
+}
+.container2 .box2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 150px;
+  row-gap: 13px;
+}
+.container2 .box2 .items {
+  font-family: Inter;
+  font-size: 14.41px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-align: left;
+}
+.container2 .hd {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 58px;
+}
+.container2 .hd h2 {
+  font-family: Inter;
+  font-size: 29.88px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #05073C;
+  text-align: start;
+  text-decoration-line: underline;
+}
+.container2 h2:nth-of-type(2) {
+  color: #808080;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
