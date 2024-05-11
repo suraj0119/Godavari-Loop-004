@@ -1,3 +1,109 @@
-h1{
-    color: red;
+section {
+    background-color: #05073C;
+    padding-bottom: 105px;
+    div>.head{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1320px;
+        margin: auto;
+        padding-top: 20px;
+
+        h2 {
+            font-family: Inter;
+            font-size: 29.65px;
+            font-weight: 700;
+            line-height: 45px;
+            text-align: left;
+            color: #FFFFFF;
+            /* margin-top: 125px; */
+            /* padding-top: 50px;
+            padding-left: 80px; */
+
+        }
+
+        h3 {
+            font-family: Inter;
+            font-size: 14.3px;
+            font-weight: 400;
+            line-height: 28.13px;
+            /* text-align: left; */
+            color: #FFFFFF;
+            padding-top: 30px;
+            padding-right: 20px;
+        }
+    }
+    .container {
+        max-width: 1320px;
+        height: auto;
+        margin: auto;
+        // padding-top: 115px;
+        padding-left: 300px;
+        padding-right: 300px;
+        gap: 0px;
+        opacity: 0px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        .box span{
+            font-family: Inter;
+            font-size: 13.89px;
+            font-weight: 400;
+            line-height: 18.2px;
+            text-align: left;
+            color: #FFFFFF;
+            width: 89.45px;
+            height: 18px;
+            // padding-left: 15px;
+            margin-top: 428px;
+        }
+        .box h3 {
+            font-family: Inter;
+            font-size: 17.3px;
+            font-weight: 500;
+            line-height: 27px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+    }
+}
+.container2 {
+    max-width: 1320px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 124px;
+    .box2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        column-gap: 150px;
+        row-gap: 13px;
+        .items {
+            font-family: Inter;
+            font-size: 14.41px;
+            font-weight: 400;
+            line-height: 28.13px;
+            text-align: left;
+        }
+
+    }
+    .hd{
+        display: flex;
+        gap: 40px;
+        margin-bottom: 58px;
+        h2 {
+            font-family: Inter;
+            font-size: 29.88px;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center;
+            color: #05073C;
+            text-align: start;
+            text-decoration-line: underline;
+        }
+    }
+    h2:nth-of-type(2){
+        color: #808080;
+        text-decoration: none;
+
+    }
 }
