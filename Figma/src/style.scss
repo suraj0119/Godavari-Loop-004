@@ -736,3 +736,139 @@ main {
 
     }
 }
+
+
+// Faheems Footer Section will start from here 
+// Faheems footers first section
+._fcontainer{
+    position: relative;
+    max-width: 1320px;
+    margin: auto;
+   .head{
+      position: absolute;
+      top:15px;
+      left: 190px;
+   }
+   .head h2{
+  
+      color:#FFFFFF;
+      font-family: Inter;
+  font-size: 29.65px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+   
+   }
+   .head p{
+      color:#FFFFFF;
+      padding-bottom: 29px;
+      font-family: Inter;
+  font-size: 14.77px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-align: left;
+  
+   }
+  label{
+      
+      position: relative;
+  
+  }
+  input{
+  border:none ;
+  padding: 15px;
+  border-radius: 12px 12px 12px 12px;
+  width: 450px;
+  height: 77px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom:-53px;
+  background-color: #5e57cb;
+  }
+  button{
+      padding: 15px;
+      border: none;
+      position: absolute;
+      box-sizing: border-box;
+   left:306px;
+  bottom: -39px;
+  left: 296.73px;
+  padding: 20px 35.8px 20px 36px;
+  gap: 0px;
+  border-radius: 12px 12px 12px 12px;
+  opacity: 0px;
+
+  }
+  }
+
+
+
+// Faheems Footers end section
+footer {
+    background-color: #ffffff;
+    font-family: "Inter", sans-serif;
+
+    ._fcontainer2 {
+        max-width: 1320px;
+        margin: auto;
+        color: black;
+
+        >div:nth-of-type(2) {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 0 60px 0;
+           
+        }
+
+        >div:nth-of-type(3) {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 30px;
+            flex-wrap: wrap;
+
+            >div:nth-of-type(1) {
+                max-width: 440px;
+              
+            }
+
+            >div:nth-of-type(4) {
+                max-width: 330px;
+           
+
+                >div {
+                    display: flex;
+                  
+                    input {
+                        padding: 20px 21px 20px 21px;
+                        border-radius: 10px 0 0 10px;
+                        width: 300px;
+                        border: 0px;
+                    }
+
+                    button {
+                        border: 0px;
+                        border-radius: 0 10px 10px 0;
+                        font-size: 14.53px;
+                        font-weight: 400;
+                        line-height: 28.13px;
+                        background-color: white;
+                        padding-right: 10px;
+
+                    }
+                }
+            }
+        }
+        >div:nth-of-type(4) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            >div:nth-of-type(1){
+                padding-left: 40px;
+            }
+            >div:nth-of-type(2){
+                display: flex;
+                padding-right: 40px;
+            }
+        }
+    }
+}
