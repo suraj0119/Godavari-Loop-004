@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container-suraj {
   max-width: 1320px;
   margin: auto;
@@ -624,4 +625,116 @@ main {
   border-radius: 12px 0px 0px 0px;
   opacity: 0.5px;
   background: linear-gradient(180deg, rgba(5, 7, 60, 0) 0%, #05073C 100%);
+}
+
+._fcontainer {
+  position: relative;
+  max-width: 1320px;
+  margin: auto;
+}
+._fcontainer .head {
+  position: absolute;
+  top: 15px;
+  left: 190px;
+}
+._fcontainer .head h2 {
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 29.65px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+}
+._fcontainer .head p {
+  color: #FFFFFF;
+  padding-bottom: 29px;
+  font-family: Inter;
+  font-size: 14.77px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-align: left;
+}
+._fcontainer label {
+  position: relative;
+}
+._fcontainer input {
+  border: none;
+  padding: 15px;
+  border-radius: 12px 12px 12px 12px;
+  width: 450px;
+  height: 77px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -53px;
+  background-color: #5e57cb;
+}
+._fcontainer button {
+  padding: 15px;
+  border: none;
+  position: absolute;
+  box-sizing: border-box;
+  left: 306px;
+  bottom: -39px;
+  left: 296.73px;
+  padding: 20px 35.8px 20px 36px;
+  gap: 0px;
+  border-radius: 12px 12px 12px 12px;
+  opacity:  0px;
+}
+
+footer {
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+footer ._fcontainer2 {
+  max-width: 1320px;
+  margin: auto;
+  color: black;
+}
+footer ._fcontainer2 > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0 60px 0;
+}
+footer ._fcontainer2 > div:nth-of-type(3) {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+}
+footer ._fcontainer2 > div:nth-of-type(3) > div:nth-of-type(1) {
+  max-width: 440px;
+}
+footer ._fcontainer2 > div:nth-of-type(3) > div:nth-of-type(4) {
+  max-width: 330px;
+}
+footer ._fcontainer2 > div:nth-of-type(3) > div:nth-of-type(4) > div {
+  display: flex;
+}
+footer ._fcontainer2 > div:nth-of-type(3) > div:nth-of-type(4) > div input {
+  padding: 20px 21px 20px 21px;
+  border-radius: 10px 0 0 10px;
+  width: 300px;
+  border: 0px;
+}
+footer ._fcontainer2 > div:nth-of-type(3) > div:nth-of-type(4) > div button {
+  border: 0px;
+  border-radius: 0 10px 10px 0;
+  font-size: 14.53px;
+  font-weight: 400;
+  line-height: 28.13px;
+  background-color: white;
+  padding-right: 10px;
+}
+footer ._fcontainer2 > div:nth-of-type(4) {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer ._fcontainer2 > div:nth-of-type(4) > div:nth-of-type(1) {
+  padding-left: 40px;
+}
+footer ._fcontainer2 > div:nth-of-type(4) > div:nth-of-type(2) {
+  display: flex;
+  padding-right: 40px;
 }/*# sourceMappingURL=style.css.map */
